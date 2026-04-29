@@ -178,12 +178,59 @@ document.addEventListener('keydown', e => {
   }
 });
 
+const GALLERY_PAGE_SIZE = 9;
+
+function initGalleryPanel(panel) {
+  const existing = panel.querySelector('.gallery-load-more-wrap');
+  if (existing) existing.remove();
+  const items = panel.querySelectorAll('.gallery-item');
+  if (items.length <= GALLERY_PAGE_SIZE) {
+    items.forEach(i => i.classList.remove('gallery-hidden'));
+    return;
+  }
+  items.forEach((item, idx) => {
+    item.classList.toggle('gallery-hidden', idx >= GALLERY_PAGE_SIZE);
+  });
+  const wrap = document.createElement('div');
+  wrap.className = 'gallery-load-more-wrap';
+  const btn = document.createElement('button');
+  btn.className = 'gallery-load-more-btn';
+  btn.textContent = 'Mehr laden';
+  const lessBtn = document.createElement('button');
+  lessBtn.className = 'gallery-load-more-btn';
+  lessBtn.textContent = 'Weniger anzeigen';
+  lessBtn.style.display = 'none';
+  lessBtn.style.marginLeft = '.75rem';
+  lessBtn.onclick = () => {
+    const items = panel.querySelectorAll('.gallery-item');
+    items.forEach((item, idx) => item.classList.toggle('gallery-hidden', idx >= GALLERY_PAGE_SIZE));
+    btn.style.display = '';
+    lessBtn.style.display = 'none';
+    panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+  btn.onclick = () => {
+    const hidden = panel.querySelectorAll('.gallery-item.gallery-hidden');
+    Array.from(hidden).slice(0, GALLERY_PAGE_SIZE).forEach(i => i.classList.remove('gallery-hidden'));
+    if (panel.querySelectorAll('.gallery-item.gallery-hidden').length === 0) btn.style.display = 'none';
+    lessBtn.style.display = '';
+  };
+  wrap.appendChild(btn);
+  wrap.appendChild(lessBtn);
+  panel.appendChild(wrap);
+}
+
 function switchTab(e, panelId) {
   document.querySelectorAll('.gallery-tab').forEach(t => t.classList.remove('active'));
   document.querySelectorAll('.gallery-panel').forEach(p => p.classList.remove('active'));
   e.currentTarget.classList.add('active');
-  document.getElementById(panelId).classList.add('active');
+  const panel = document.getElementById(panelId);
+  panel.classList.add('active');
+  initGalleryPanel(panel);
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.gallery-panel').forEach(initGalleryPanel);
+});
 
 function openLightbox(el) {
   const img = el.querySelector('img');
