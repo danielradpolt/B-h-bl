@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reittherapiehof Bühübl – Reittherapie in St. Martin im Mühlkreis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#" class="nav-logo">
+      <div class="nav-logo-icon">🐴</div>
+      <div class="nav-logo-text">
+        Reittherapiehof Bühübl
+        <span>St. Martin im Mühlkreis</span>
+      </div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#angebot">Angebot</a></li>
+      <li><a href="#ueber-uns">Über uns</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#galerie">Galerie</a></li>
+      <li><a href="#kontakt" class="nav-cta">Kontakt</a></li>
+    </ul>
+    <div class="nav-burger" id="burger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Reittherapie &amp; Naturheilung</div>
+      <h1>Heilsame Verbindung zwischen <em>Mensch und Pferd</em></h1>
+      <p>Inmitten der Natur des Mühlviertels begleiten wir Kinder, Jugendliche und Erwachsene auf ihrem Weg —
+        individuell, einfühlsam und nachhaltig.</p>
+      <div class="hero-actions">
+        <a href="#angebot" class="btn btn-primary">Unsere Angebote</a>
+        <a href="#kontakt" class="btn btn-ghost">Termin anfragen</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Entdecken</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <div class="quote-section">
+    <blockquote>Eine Therapie, die wirkt, ohne zu wissen, dass man therapiert wird – mit einem vierbeinigen Partner, der
+      hilft, ohne zu wissen, dass er ein Therapeut ist.</blockquote>
+    <div class="quote-attr">Leitgedanke – Reittherapiehof Bühübl</div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="ueber-uns">
+    <div class="about-grid">
+      <div class="about-img-wrap">
+        <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=900&auto=format&fit=crop&q=80"
+          alt="Pferd auf dem Hof Bühübl" loading="lazy" />
+        <div class="about-img-badge">
+          <strong>❤</strong>
+          <span>Mit Herz &amp; Seele</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="section-label">Über den Hof</div>
+        <h2>Der Reittherapiehof Bühübl</h2>
+        <p>Herzlich willkommen am Reittherapiehof Bühübl in St. Martin im Mühlkreis! Unser Hof liegt eingebettet in die
+          sanfte Hügellandschaft des Mühlviertels – ein Ort der Ruhe, der Natur und der besonderen Begegnung.</p>
+        <p>Die Verbindung zwischen Mensch und Pferd ist etwas Einzigartiges. Pferde spiegeln uns unsere innere Welt
+          wider, ohne zu urteilen. Genau diese Kraft nutzen wir in der Reittherapie: für körperliche Förderung,
+          emotionale Stärkung und mentale Balance.</p>
+        <p>Ob Kinder mit besonderen Bedürfnissen, Jugendliche in Entwicklungsphasen oder Erwachsene, die neue Kraft
+          schöpfen möchten – wir begleiten jeden Menschen individuell und mit ganzem Herzen.</p>
+        <a href="#kontakt" class="btn">Jetzt Termin anfragen →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="angebot" class="services-section">
+    <div class="services-header">
+      <div class="section-label">Was wir anbieten</div>
+      <h2>Unsere Angebote</h2>
+      <p class="lead">Individuell abgestimmt auf jeden Menschen – von der ersten Begegnung mit dem Pferd bis zur
+        therapeutischen Begleitung.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <img class="service-card-img"
+          src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=600&auto=format&fit=crop&q=80"
+          alt="Hippotherapie" loading="lazy" />
+        <div class="service-card-body">
+          <div class="service-icon">🐴</div>
+          <h3>Hippotherapie</h3>
+          <p>Spezielle physiotherapeutische Behandlungsmethode mit dem Pferd als Therapiepartner. Die dreidimensionalen
+            Bewegungen verbessern Haltungs-, Gleichgewichts- und Stützreaktionen sowie Sensomotorik.</p>
+          <span class="service-tag">Physiotherapie &amp; Neurologie</span><br />
+          <button class="service-more-btn" onclick="openServiceModal('hippo')">Mehr erfahren →</button>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img class="service-card-img"
+          src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=900&auto=format&fit=crop&q=80"
+          alt="Ergotherapie mit Pferd" loading="lazy" />
+        <div class="service-card-body">
+          <div class="service-icon">🌿</div>
+          <h3>Ergotherapie mit Pferd</h3>
+          <p>Ärztlich verordnete Therapieform. Ziel: Handlungsabläufe verbessern, größtmögliche Selbstständigkeit
+            erreichen – Geschicklichkeit, Gleichgewicht, Sensorik und Eigenwahrnehmung.</p>
+          <span class="service-tag">Kinder &amp; Erwachsene</span><br />
+          <button class="service-more-btn" onclick="openServiceModal('ergo')">Mehr erfahren →</button>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img class="service-card-img"
+          src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&auto=format&fit=crop&q=80"
+          alt="Heilpädagogische Förderung" loading="lazy" />
+        <div class="service-card-body">
+          <div class="service-icon">⭐</div>
+          <h3>Heilpäd. &amp; therapeutische Förderung (HTFP)</h3>
+          <p>Ganzheitliche Förderung über das Medium Pferd: körperlich, emotional, geistig und sozial. Ziel ist positive
+            Beeinflussung von Befinden, sozialem Verhalten und Persönlichkeitsentwicklung.</p>
+          <span class="service-tag">Kinder &amp; Jugendliche</span><br />
+          <button class="service-more-btn" onclick="openServiceModal('htfp')">Mehr erfahren →</button>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img class="service-card-img"
+          src="https://images.unsplash.com/photo-1560800452-f2d475982b96?w=600&auto=format&fit=crop&q=80"
+          alt="Tiergestützte Psychotherapie" loading="lazy" />
+        <div class="service-card-body">
+          <div class="service-icon">💚</div>
+          <h3>Tiergestützte Psychotherapie</h3>
+          <p>Medizinisch-therapeutische Maßnahme von ausgebildeten Psychotherapeut/innen. Das Pferd als Therapiepartner
+            fördert psychische Stabilität und neue Bewältigungsmöglichkeiten.</p>
+          <span class="service-tag">Jugendliche &amp; Erwachsene</span><br />
+          <button class="service-more-btn" onclick="openServiceModal('psycho')">Mehr erfahren →</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team">
+    <div class="team-header">
+      <div class="section-label">Die Menschen dahinter</div>
+      <h2>Unser Team</h2>
+      <p class="lead">Mit Fachkompetenz, Herzlichkeit und tiefer Verbundenheit zur Natur begleiten wir Sie auf Ihrem
+        Weg.</p>
+    </div>
+    <div class="team-grid">
+
+      <div class="team-card">
+        <div class="team-card-photo-wrap" onclick="openLightbox(this)" style="cursor:pointer;">
+          <img src="images/Andrea.jpg"
+            alt="Andrea Enzenhofer" loading="lazy" />
+        </div>
+        <h3>Dipl. Päd. Andrea Enzenhofer</h3>
+        <div class="team-card-role">Psychotherapeutin &amp; Hofbesitzerin</div>
+        <div class="team-card-divider"></div>
+        <p>Systemische Familien-Psychotherapeutin mit Zusatzausbildung in HTFP. Führt den Bühübl-Hof mit Leidenschaft.
+        </p>
+        <button class="team-more-btn" onclick="openTeamModal('andrea')">Mehr erfahren →</button>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card-photo-wrap" onclick="openLightbox(this)" style="cursor:pointer;">
+          <img src="images/Maria_Haudeck.jpg"
+            alt="Maria Haudek" loading="lazy" />
+        </div>
+        <h3>Dipl. Päd. Maria Haudek</h3>
+        <div class="team-card-role">Sonder- &amp; Sprachheilpädagogin</div>
+        <div class="team-card-divider"></div>
+        <p>Sonder- und Sprachheilpädagogin mit Zusatzausbildung in HTFP. Begleitet Menschen mit unterschiedlichsten
+          Förderbedürfnissen.</p>
+        <button class="team-more-btn" onclick="openTeamModal('maria')">Mehr erfahren →</button>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card-photo-wrap" onclick="openLightbox(this)" style="cursor:pointer;">
+          <img src="images/Judith_Pühringer.jpg"
+            alt="Judith Pühringer" loading="lazy" />
+        </div>
+        <h3>Mag.a Judith Pühringer</h3>
+        <div class="team-card-role">Hippotherapeutin &amp; Physiotherapeutin</div>
+        <div class="team-card-divider"></div>
+        <p>Seit 2014 Hippotherapeutin am Bühübl. Zusätzlich Kinder-Bobath-Physiotherapeutin im Ambulatorium St. Isidor.
+        </p>
+        <button class="team-more-btn" onclick="openTeamModal('judith')">Mehr erfahren →</button>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card-photo-wrap" onclick="openLightbox(this)" style="cursor:pointer;">
+          <img src="images/NikiTroebinger.jpg"
+            alt="Nicole Tröbinger" loading="lazy" />
+        </div>
+        <h3>Nicole Tröbinger</h3>
+        <div class="team-card-role">Dipl. Physiotherapeutin</div>
+        <div class="team-card-divider"></div>
+        <p>Diplomierte Physiotherapeutin mit Zusatzausbildung in der Hippotherapie. Begleitet Kinder und Erwachsene mit
+          körperlichen und neurologischen Beeinträchtigungen.</p>
+        <button class="team-more-btn" onclick="openTeamModal('niki')">Mehr erfahren →</button>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card-photo-wrap" onclick="openLightbox(this)" style="cursor:pointer;">
+          <img src="images/MartinaLinddorfer.png"
+            alt="Martina Lindorfer" loading="lazy" />
+        </div>
+        <h3>Martina Lindorfer</h3>
+        <div class="team-card-role">Hippotherapeutin</div>
+        <div class="team-card-divider"></div>
+        <p>Seit vielen Jahren Hippotherapeutin mit orthopädischen und neurologischen Schwerpunkten am Bühübl und
+          weiteren Einrichtungen.</p>
+        <button class="team-more-btn" onclick="openTeamModal('martina')">Mehr erfahren →</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="galerie" class="gallery-section">
+    <div class="gallery-header">
+      <div class="section-label">Einblicke</div>
+      <h2>Galerie</h2>
+    </div>
+
+    <!-- TABS -->
+    <div class="gallery-tabs">
+      <button class="gallery-tab active" onclick="switchTab(event,'tab-reithalle')">Reithalle &amp; Stüberl</button>
+      <button class="gallery-tab" onclick="switchTab(event,'tab-impressionen')">Allgemeine Impressionen</button>
+      <button class="gallery-tab" onclick="switchTab(event,'tab-hippo')">Hippotherapie</button>
+      <button class="gallery-tab" onclick="switchTab(event,'tab-ergo')">Ergotherapie</button>
+      <button class="gallery-tab" onclick="switchTab(event,'tab-htfp')">Heilpäd. Förderung</button>
+      <button class="gallery-tab" onclick="switchTab(event,'tab-psycho')">Tiergest. Psychotherapie</button>
+    </div>
+
+    <!-- PANEL: Reithalle & Stüberl -->
+    <div id="tab-reithalle" class="gallery-panel active">
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop&q=80"
+            alt="Reithalle" loading="lazy" />
+          <div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              <line x1="11" y1="8" x2="11" y2="14" />
+              <line x1="8" y1="11" x2="14" y2="11" />
+            </svg></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=800&auto=format&fit=crop&q=80"
+            alt="Stüberl" loading="lazy" />
+          <div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              <line x1="11" y1="8" x2="11" y2="14" />
+              <line x1="8" y1="11" x2="14" y2="11" />
+            </svg></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
+            alt="Hof Bühübl" loading="lazy" />
+          <div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              <line x1="11" y1="8" x2="11" y2="14" />
+              <line x1="8" y1="11" x2="14" y2="11" />
+            </svg></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PANEL: Allgemeine Impressionen -->
+    <div id="tab-impressionen" class="gallery-panel">
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=600&auto=format&fit=crop&q=80"
+            alt="Pferde auf der Weide" loading="lazy" />
+          <div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              <line x1="11" y1="8" x2="11" y2="14" />
+              <line x1="8" y1="11" x2="14" y2="11" />
+            </svg></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1560800452-f2d475982b96?w=600&auto=format&fit=crop&q=80"
+            alt="Natur Mühlviertel" loading="lazy" />
+          <div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              <line x1="11" y1="8" x2="11" y2="14" />
+              <line x1="8" y1="11" x2="14" y2="11" />
+            </svg></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=900&auto=format&fit=crop&q=80"
+            alt="Mensch und Pferd" loading="lazy" />
+          <div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              <line x1="11" y1="8" x2="11" y2="14" />
+              <line x1="8" y1="11" x2="14" y2="11" />
+            </svg></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&auto=format&fit=crop&q=80"
+            alt="Hofimpression" loading="lazy" />
+          <div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              <line x1="11" y1="8" x2="11" y2="14" />
+              <line x1="8" y1="11" x2="14" y2="11" />
+            </svg></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1590227317108-a08a4a2f04f1?w=800&auto=format&fit=crop&q=80"
+            alt="Pferd mit Kind" loading="lazy" />
+          <div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              <line x1="11" y1="8" x2="11" y2="14" />
+              <line x1="8" y1="11" x2="14" y2="11" />
+            </svg></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800&auto=format&fit=crop&q=80"
+            alt="Landschaft" loading="lazy" />
+          <div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              <line x1="11" y1="8" x2="11" y2="14" />
+              <line x1="8" y1="11" x2="14" y2="11" />
+            </svg></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PANEL: Hippotherapie -->
+    <div id="tab-hippo" class="gallery-panel">
+      <div class="gallery-grid cols-2">
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=600&auto=format&fit=crop&q=80"
+            alt="Hippotherapie 1" loading="lazy" />
+          <div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              <line x1="11" y1="8" x2="11" y2="14" />
+              <line x1="8" y1="11" x2="14" y2="11" />
+            </svg></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=900&auto=format&fit=crop&q=80"
+            alt="Hippotherapie 2" loading="lazy" />
+          <div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              <line x1="11" y1="8" x2="11" y2="14" />
+              <line x1="8" y1="11" x2="14" y2="11" />
+            </svg></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PANEL: Ergotherapie -->
+    <div id="tab-ergo" class="gallery-panel">
+      <div class="gallery-grid cols-2">
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1590227317108-a08a4a2f04f1?w=800&auto=format&fit=crop&q=80"
+            alt="Ergotherapie 1" loading="lazy" />
+          <div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              <line x1="11" y1="8" x2="11" y2="14" />
+              <line x1="8" y1="11" x2="14" y2="11" />
+            </svg></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&auto=format&fit=crop&q=80"
+            alt="Ergotherapie 2" loading="lazy" />
+          <div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              <line x1="11" y1="8" x2="11" y2="14" />
+              <line x1="8" y1="11" x2="14" y2="11" />
+            </svg></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PANEL: Heilpäd. Förderung -->
+    <div id="tab-htfp" class="gallery-panel">
+      <div class="gallery-grid cols-2">
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1560800452-f2d475982b96?w=600&auto=format&fit=crop&q=80"
+            alt="HTFP 1" loading="lazy" />
+          <div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              <line x1="11" y1="8" x2="11" y2="14" />
+              <line x1="8" y1="11" x2="14" y2="11" />
+            </svg></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=600&auto=format&fit=crop&q=80"
+            alt="HTFP 2" loading="lazy" />
+          <div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              <line x1="11" y1="8" x2="11" y2="14" />
+              <line x1="8" y1="11" x2="14" y2="11" />
+            </svg></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PANEL: Tiergest. Psychotherapie -->
+    <div id="tab-psycho" class="gallery-panel">
+      <div class="gallery-grid cols-2">
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=900&auto=format&fit=crop&q=80"
+            alt="Psychotherapie 1" loading="lazy" />
+          <div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              <line x1="11" y1="8" x2="11" y2="14" />
+              <line x1="8" y1="11" x2="14" y2="11" />
+            </svg></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800&auto=format&fit=crop&q=80"
+            alt="Psychotherapie 2" loading="lazy" />
+          <div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              <line x1="11" y1="8" x2="11" y2="14" />
+              <line x1="8" y1="11" x2="14" y2="11" />
+            </svg></div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="kontakt">
+    <div class="contact-centered">
+      <div class="section-label">Kontakt</div>
+      <h2>Wir freuen uns auf Ihre Nachricht</h2>
+      <p class="lead" style="margin:0 auto 3.5rem;">Nehmen Sie einfach Kontakt auf – telefonisch oder per E-Mail. Wir
+        melden uns so bald wie möglich bei Ihnen.</p>
+
+      <div class="contact-cards">
+        <a href="https://maps.google.com/?q=Reith+4,+4113+St.+Martin+im+Mühlkreis" target="_blank"
+          class="contact-card contact-card--link">
+          <div class="contact-card-icon">📍</div>
+          <strong>Adresse</strong>
+          <span>Reith 4<br />4113 St. Martin im Mühlkreis</span>
+          <div class="contact-card-cta">In Google Maps öffnen ↗</div>
+        </a>
+
+        <a href="tel:+436646365828" class="contact-card contact-card--link">
+          <div class="contact-card-icon">📞</div>
+          <strong>Telefon</strong>
+          <span>+43 664 / 63 65 828</span>
+          <div class="contact-card-cta">Jetzt anrufen ↗</div>
+        </a>
+
+        <a href="mailto:andrea.enzenhofer@aon.at?subject=Anfrage%20Reittherapiehof%20Bühübl"
+          class="contact-card contact-card--link">
+          <div class="contact-card-icon">✉️</div>
+          <strong>E-Mail</strong>
+          <span>andrea.enzenhofer@aon.at</span>
+          <div class="contact-card-cta">E-Mail schreiben ↗</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <div class="map-section" style="position:relative;">
+    <iframe src="https://maps.google.com/maps?q=Reith+4,+4113+St.+Martin+im+Mühlkreis,+Austria&output=embed&hl=de"
+      width="100%" height="400" style="border:0;display:block;" allowfullscreen loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <a href="https://maps.google.com/?q=Reith+4,+4113+St.+Martin+im+Mühlkreis" target="_blank"
+      style="position:absolute;bottom:1.2rem;right:1.2rem;background:var(--green-mid);color:white;padding:.6rem 1.2rem;border-radius:50px;font-size:.85rem;font-weight:600;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,.2);">
+      In Google Maps öffnen ↗
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div style="font-family:'Playfair Display',serif;color:white;font-size:1.3rem;">Reittherapiehof Bühübl</div>
+        <p>Einfühlsame Reittherapie, die Körper, Geist und Seele stärkt – inmitten der Natur des Mühlviertels.</p>
+        <div style="color:rgba(255,255,255,.5);font-size:.85rem;">Reith 4 · 4113 St. Martin im Mühlkreis</div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#ueber-uns">Über uns</a></li>
+          <li><a href="#angebot">Angebot</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="tel:+436646365828">+43 664 / 63 65 828</a></li>
+          <li><a href="mailto:andrea.enzenhofer@aon.at">andrea.enzenhofer@aon.at</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Reittherapiehof Bühübl · Andrea Enzenhofer</span>
+      <span>
+        <a href="#"
+          onclick="event.preventDefault();document.getElementById('impressumBackdrop').classList.add('open');document.body.style.overflow='hidden'">Impressum</a>
+        ·
+        <a href="#"
+          onclick="event.preventDefault();document.getElementById('datenschutzBackdrop').classList.add('open');document.body.style.overflow='hidden'">Datenschutzerklärung</a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- TEAM MODAL -->
+  <div class="service-modal-backdrop" id="teamModalBackdrop" onclick="closeTeamModal(event)">
+    <div class="service-modal" style="max-width:560px;">
+      <div style="position:relative;background:var(--cream);border-radius:16px 16px 0 0;padding:2.5rem 2rem 2rem;display:flex;flex-direction:column;align-items:center;gap:.75rem;border-bottom:1px solid var(--cream-dark);">
+        <div onclick="openLightbox(this)" style="width:120px;height:120px;border-radius:50%;overflow:hidden;border:3px solid white;box-shadow:0 4px 16px rgba(0,0,0,.15);cursor:pointer;">
+          <img id="teamModalAvatar" src="" alt=""
+            style="width:100%;height:100%;object-fit:cover;object-position:top;" />
+        </div>
+        <button class="service-modal-close" style="position:absolute;top:1rem;right:1rem;"
+          onclick="document.getElementById('teamModalBackdrop').classList.remove('open');document.body.style.overflow=''">✕</button>
+      </div>
+      <div class="service-modal-body" style="padding-top:1.5rem;">
+        <h3 id="teamModalName"
+          style="font-family:'Playfair Display',serif;color:var(--green-dark);font-size:1.4rem;margin-bottom:.3rem;">
+        </h3>
+        <div id="teamModalRole"
+          style="font-size:.78rem;color:var(--green-mid);font-weight:600;letter-spacing:.07em;text-transform:uppercase;margin-bottom:1.2rem;">
+        </div>
+        <div id="teamModalBio" style="color:var(--text-muted);font-size:.95rem;line-height:1.85;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DATENSCHUTZ MODAL -->
+  <div class="service-modal-backdrop" id="datenschutzBackdrop" onclick="closeDatenschutz(event)">
+    <div class="service-modal" style="max-width:640px;">
+      <div class="service-modal-body" style="padding-top:2.2rem;">
+        <div class="service-modal-header">
+          <h3 style="font-family:'Playfair Display',serif;color:var(--green-dark);">Datenschutzerklärung</h3>
+          <button class="service-modal-close"
+            onclick="document.getElementById('datenschutzBackdrop').classList.remove('open');document.body.style.overflow=''">✕</button>
+        </div>
+
+        <p
+          style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--green-dark);margin-bottom:.8rem;">
+          Verantwortliche Person</p>
+        <p style="color:var(--text-muted);font-size:.93rem;line-height:1.8;margin-bottom:1.5rem;">
+          Andrea Enzenhofer · Reith 4, A-4113 St. Martin im Mühlkreis<br />
+          E-Mail: andrea.enzenhofer@aon.at · Tel: +43 664 / 63 65 828
+        </p>
+
+        <p
+          style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--green-dark);margin-bottom:.8rem;">
+          Erhebung und Verarbeitung personenbezogener Daten</p>
+        <p style="color:var(--text-muted);font-size:.93rem;line-height:1.8;margin-bottom:1.5rem;">
+          Diese Website erhebt und speichert automatisch Informationen in Server-Logfiles, die Ihr Browser übermittelt.
+          Dies sind: Browsertyp und -version, verwendetes Betriebssystem, Referrer-URL, Hostname des zugreifenden
+          Rechners sowie Uhrzeit der Serveranfrage. Diese Daten sind nicht bestimmten Personen zuordenbar und werden
+          nicht mit Daten aus anderen Quellen zusammengeführt.
+        </p>
+
+        <p
+          style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--green-dark);margin-bottom:.8rem;">
+          Kontaktformular</p>
+        <p style="color:var(--text-muted);font-size:.93rem;line-height:1.8;margin-bottom:1.5rem;">
+          Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Formular inklusive der
+          von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen
+          bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+        </p>
+
+        <p
+          style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--green-dark);margin-bottom:.8rem;">
+          Ihre Rechte (DSGVO)</p>
+        <p style="color:var(--text-muted);font-size:.93rem;line-height:1.8;margin-bottom:1.5rem;">
+          Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten,
+          deren Herkunft und Empfänger sowie den Zweck der Datenverarbeitung. Ebenso haben Sie das Recht auf
+          Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz
+          können Sie sich jederzeit an uns wenden.
+        </p>
+
+        <div
+          style="padding:1rem;background:var(--cream);border-radius:8px;font-size:.88rem;color:var(--text-muted);line-height:1.7;">
+          Diese Datenschutzerklärung wurde gemäß der EU-Datenschutz-Grundverordnung (DSGVO) und dem österreichischen
+          Datenschutzgesetz (DSG) erstellt.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMPRESSUM MODAL -->
+  <div class="service-modal-backdrop" id="impressumBackdrop" onclick="closeImpressum(event)">
+    <div class="service-modal" id="impressumModal" style="max-width:600px;">
+      <div class="service-modal-body" style="padding-top:2.2rem;">
+        <div class="service-modal-header">
+          <h3 style="font-family:'Playfair Display',serif;color:var(--green-dark);">Impressum</h3>
+          <button class="service-modal-close"
+            onclick="document.getElementById('impressumBackdrop').classList.remove('open');document.body.style.overflow=''">✕</button>
+        </div>
+
+        <p style="color:var(--text-muted);line-height:1.8;margin-bottom:1.5rem;">
+          Du hast noch Fragen oder möchtest mehr über die verschiedenen Sparten der Reittherapie wissen? Dann
+          kontaktiere mich gerne:
+        </p>
+
+        <div style="display:flex;flex-direction:column;gap:.6rem;margin-bottom:2rem;">
+          <a href="tel:+436646365828" style="color:var(--green-mid);font-weight:600;text-decoration:none;">📞 +43 664 /
+            63 65 828</a>
+          <a href="mailto:andrea.enzenhofer@aon.at"
+            style="color:var(--green-mid);font-weight:600;text-decoration:none;">✉ andrea.enzenhofer@aon.at</a>
+        </div>
+
+        <div style="border-top:1px solid var(--cream-dark);padding-top:1.5rem;">
+          <p
+            style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--green-dark);margin-bottom:1rem;">
+            Informationspflicht gemäß §5 Abs.1 E-Commerce Gesetz
+          </p>
+          <table style="width:100%;border-collapse:collapse;font-size:.9rem;color:var(--text-muted);line-height:1.8;">
+            <tr>
+              <td style="padding:.3rem 0;color:var(--text);font-weight:600;width:140px;">Firmenname</td>
+              <td>Andrea Enzenhofer</td>
+            </tr>
+            <tr>
+              <td style="padding:.3rem 0;color:var(--text);font-weight:600;">Firmenform</td>
+              <td>Nicht protokolliertes Einzelunternehmen</td>
+            </tr>
+            <tr>
+              <td style="padding:.3rem 0;color:var(--text);font-weight:600;">Anschrift</td>
+              <td>Reith 4, A-4113 St. Martin im Mühlkreis</td>
+            </tr>
+            <tr>
+              <td style="padding:.3rem 0;color:var(--text);font-weight:600;">Telefon</td>
+              <td>+43 664 / 63 65 828</td>
+            </tr>
+            <tr>
+              <td style="padding:.3rem 0;color:var(--text);font-weight:600;">E-Mail</td>
+              <td>andrea.enzenhofer@aon.at</td>
+            </tr>
+            <tr>
+              <td style="padding:.3rem 0;color:var(--text);font-weight:600;">UID-Nr.</td>
+              <td>ATU66389400</td>
+            </tr>
+            <tr>
+              <td style="padding:.3rem 0;color:var(--text);font-weight:600;">Unternehmens­gegenstand</td>
+              <td>Landwirtschaft</td>
+            </tr>
+          </table>
+          <div
+            style="margin-top:1.2rem;padding:1rem;background:var(--cream);border-radius:8px;font-size:.88rem;color:var(--text-muted);line-height:1.7;">
+            <strong style="display:block;color:var(--text);margin-bottom:.3rem;">Bankverbindung</strong>
+            Raiffeisen Landesbank OÖ, Bankstelle St. Martin im Mühlkreis<br />
+            IBAN: AT76 3453 5000 0001 1551 &nbsp;·&nbsp; BIC: RZ00AT2L535
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICE MODAL -->
+  <div class="service-modal-backdrop" id="serviceModalBackdrop" onclick="closeServiceModal(event)">
+    <div class="service-modal" id="serviceModal">
+      <img class="service-modal-img" id="serviceModalImg" src="" alt="" />
+      <div class="service-modal-body">
+        <div class="service-modal-header">
+          <h3 id="serviceModalTitle"></h3>
+          <button class="service-modal-close" onclick="closeServiceModal()">✕</button>
+        </div>
+        <div id="serviceModalContent"></div>
+        <div class="service-modal-footer">
+          <a href="#kontakt" class="btn" style="background:var(--green-mid);color:white;"
+            onclick="closeServiceModal()">Termin anfragen →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img id="lightboxImg" src="" alt="" />
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
