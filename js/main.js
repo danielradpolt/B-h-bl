@@ -2,6 +2,13 @@
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 20);
+  const galerie = document.getElementById('galerie');
+  const btn = document.getElementById('galleryBackBtn');
+  if (galerie && btn) {
+    const rect = galerie.getBoundingClientRect();
+    const inside = rect.top < 0 && rect.bottom > 0;
+    btn.classList.toggle('visible', inside);
+  }
 });
 
 
@@ -24,7 +31,7 @@ document.addEventListener('click', (e) => {
 const serviceData = {
   hippo: {
     title: 'Hippotherapie',
-    img: 'https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=800&auto=format&fit=crop&q=80',
+    img: 'images/Therapien/Hippo/MainHippo.jpg',
     html: `
       <p>Bei der Hippotherapie handelt es sich um eine spezielle physiotherapeutische Behandlungsmethode – eine medizinisch-therapeutische Maßnahme mit dem Pferd als Therapiepartner.</p>
       <p>Die dreidimensionalen Bewegungen des Pferdes übertragen sich auf die Patient/innen und fordern eine ständige Anpassung, wodurch Haltungs-, Gleichgewichts- und Stützreaktion sowie Sensomotorik verbessert werden. Mit wachsendem Vertrauen zum Pferd erfahren die Patient/innen nicht nur mehr Körperbewusstsein, sondern auch gesteigertes Selbstbewusstsein.</p>
@@ -41,7 +48,7 @@ const serviceData = {
   },
   ergo: {
     title: 'Ergotherapie mit Pferd',
-    img: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=800&auto=format&fit=crop&q=80',
+    img: 'images/Therapien/Ergo/ErgoMain.jpg',
     html: `
       <p>Diese spezielle Form der Ergotherapie wird ärztlich verordnet. Ziel ist es, Handlungsabläufe zu verbessern und eine größtmögliche Selbstständigkeit zu erreichen. Geschicklichkeit, Gleichgewicht und Sensorik werden ebenso trainiert wie Eigen- und Fremdwahrnehmung, Handlungsplanung und Selbstverantwortung.</p>
       <span class="modal-label">Anwendungsbereiche</span>
@@ -60,7 +67,7 @@ const serviceData = {
   },
   htfp: {
     title: 'Heilpäd. & therapeutische Förderung (HTFP)',
-    img: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&auto=format&fit=crop&q=80',
+    img: 'images/Therapien/HTFP/HTFPMain.jpg',
     html: `
       <p>Die HTFP hat eine positive Beeinflussung des Befindens, des sozialen Verhaltens und der Persönlichkeitsentwicklung zum Ziel. Es handelt sich um eine ganzheitliche Förderung über das Medium Pferd: körperlich, emotional, geistig und sozial.</p>
       <span class="modal-label">Anwendungsbereiche</span>
@@ -76,7 +83,7 @@ const serviceData = {
   },
   psycho: {
     title: 'Tiergestützte Psychotherapie',
-    img: 'https://images.unsplash.com/photo-1560800452-f2d475982b96?w=600&auto=format&fit=crop&q=80',
+    img: 'images/Therapien/Psycho/psychoMain.jpg',
     html: `
       <p>Diese spezielle Form der Psychotherapie ist eine medizinisch-therapeutische Maßnahme und wird von einer ausgebildeten Psychotherapeutin bzw. einem ausgebildeten Psychotherapeuten durchgeführt. Das Pferd wird als Therapiepartner in den Behandlungsprozess einbezogen.</p>
       <p>Durch den wertfreien Kontakt mit dem Tier können emotionale Prozesse angeregt, Selbst- und Fremdwahrnehmung verbessert sowie Vertrauen und Selbstwertgefühl gestärkt werden.</p>

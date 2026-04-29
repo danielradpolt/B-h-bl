@@ -542,6 +542,21 @@ footer {
 .footer-bottom a { color: rgba(255,255,255,.4); text-decoration: none; }
 .footer-bottom a:hover { color: rgba(255,255,255,.7); }
 
+/* ── GALLERY BACK BTN ── */
+.gallery-back-btn {
+  display: none;
+  position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 90;
+  background: var(--green-mid); color: white;
+  border-radius: 50px; padding: .6rem 1.1rem;
+  font-size: .85rem; font-weight: 600;
+  text-decoration: none;
+  align-items: center; gap: .4rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,.2);
+  opacity: 0; transform: translateY(12px);
+  transition: opacity .25s ease, transform .25s ease;
+}
+.gallery-back-btn.visible { opacity: 1; transform: translateY(0); }
+
 /* ── LIGHTBOX ── */
 .lightbox {
   position: fixed; inset: 0; z-index: 999;
@@ -618,6 +633,7 @@ footer {
 }
 
 @media (max-width: 640px) {
+  .gallery-back-btn { display: flex; }
   .nav-links {
     display: flex; flex-direction: column; position: absolute; top: 72px; left: 0; right: 0;
     background: white; padding: 1.5rem 5%; box-shadow: var(--shadow); border-top: 1px solid var(--cream-dark);
