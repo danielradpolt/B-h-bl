@@ -12,6 +12,13 @@ function toggleMenu() {
 document.querySelectorAll('.nav-links a').forEach(a => {
   a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
 });
+document.addEventListener('click', (e) => {
+  const nav = document.getElementById('nav');
+  const links = document.getElementById('navLinks');
+  if (links.classList.contains('open') && !nav.contains(e.target)) {
+    links.classList.remove('open');
+  }
+});
 
 // Lightbox
 const serviceData = {
