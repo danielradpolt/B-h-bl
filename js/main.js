@@ -244,6 +244,13 @@ function switchTab(e, panelId) {
 
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.gallery-panel').forEach(initGalleryPanel);
+  // Preload hidden panel images in background so tab-switch is instant
+  requestIdleCallback(() => {
+    document.querySelectorAll('.gallery-panel:not(.active) img[src]').forEach(img => {
+      const p = new Image();
+      p.src = img.src;
+    });
+  }, { timeout: 3000 });
 });
 
 let lightboxItems = [];
