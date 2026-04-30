@@ -292,7 +292,7 @@ h2 {
   opacity: 1;
 }
 .service-modal-img {
-  width: 100%; height: 240px; object-fit: cover; object-position: top;
+  width: 100%; height: 240px; object-fit: cover; object-position: center 20%;
   border-radius: 16px 16px 0 0; display: block;
 }
 .service-modal-body { padding: 2rem 2.2rem 2.2rem; }
