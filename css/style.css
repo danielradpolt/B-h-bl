@@ -105,11 +105,20 @@ nav.scrolled { box-shadow: var(--shadow); }
   display: inline-flex; align-items: center; gap: 8px;
   background: rgba(255,255,255,.15); backdrop-filter: blur(8px);
   border: 1px solid rgba(255,255,255,.25);
+  color: var(--white); font-size: .85rem; font-weight: 600;
+  padding: .4rem 1rem; border-radius: 50px;
+  margin-bottom: 1.5rem; letter-spacing: .08em; text-transform: uppercase;
+}
+.hero-badge::before { content: '🌿'; }
+.hero-subbadge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,.15); backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,.25);
   color: var(--white); font-size: .8rem; font-weight: 500;
   padding: .4rem 1rem; border-radius: 50px;
   margin-bottom: 1.5rem; letter-spacing: .04em;
 }
-.hero-badge::before { content: '🌿'; }
+.hero-subbadge::before { content: '🌿'; }
 .hero h1 {
   font-family: 'Playfair Display', serif;
   font-size: clamp(2.4rem, 5vw, 3.8rem);
