@@ -461,14 +461,6 @@
         melden uns so bald wie möglich bei Ihnen.</p>
 
       <div class="contact-cards">
-        <a href="https://maps.google.com/?q=Reith+4,+4113+St.+Martin+im+Mühlkreis" target="_blank"
-          class="contact-card contact-card--link">
-          <div class="contact-card-icon">📍</div>
-          <strong>Adresse</strong>
-          <span>Reith 4<br />4113 St. Martin im Mühlkreis</span>
-          <div class="contact-card-cta">In Google Maps öffnen ↗</div>
-        </a>
-
         <a href="tel:+436646365828" class="contact-card contact-card--link">
           <div class="contact-card-icon">📞</div>
           <strong>Telefon</strong>
@@ -482,6 +474,14 @@
           <strong>E-Mail</strong>
           <span>andrea.enzenhofer@aon.at</span>
           <div class="contact-card-cta">E-Mail schreiben ↗</div>
+        </a>
+
+        <a href="https://maps.google.com/?q=Reith+4,+4113+St.+Martin+im+Mühlkreis" target="_blank"
+          class="contact-card contact-card--link">
+          <div class="contact-card-icon">📍</div>
+          <strong>Adresse</strong>
+          <span>Reith 4<br />4113 St. Martin im Mühlkreis</span>
+          <div class="contact-card-cta">In Google Maps öffnen ↗</div>
         </a>
       </div>
     </div>
@@ -714,7 +714,10 @@
   <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox" onclick="closeLightbox()">
     <button class="lightbox-close" onclick="closeLightbox()">✕</button>
-    <img id="lightboxImg" src="" alt="" />
+    <button class="lightbox-nav lightbox-prev" onclick="event.stopPropagation();lightboxNav(-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="22" height="22"><path d="M15 18l-6-6 6-6"/></svg></button>
+    <img id="lightboxImg" src="" alt="" onclick="event.stopPropagation()" />
+    <button class="lightbox-nav lightbox-next" onclick="event.stopPropagation();lightboxNav(1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="22" height="22"><path d="M9 18l6-6-6-6"/></svg></button>
+    <div class="lightbox-counter" id="lightboxCounter"></div>
   </div>
 
   <script src="js/main.js"></script>
