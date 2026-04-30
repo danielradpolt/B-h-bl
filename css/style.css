@@ -654,14 +654,14 @@ footer {
   .gallery-back-btn { display: flex; }
   .nav-links {
     display: flex; flex-direction: column; position: absolute; top: 72px; left: 0; right: 0;
-    background: white; padding: 1.5rem 5%; box-shadow: var(--shadow); border-top: 1px solid var(--cream-dark);
+    background: white; padding: .6rem 5%; box-shadow: var(--shadow); border-top: 1px solid var(--cream-dark);
     opacity: 0; pointer-events: none; transform: translateY(-8px);
     transition: opacity .22s ease, transform .22s ease;
   }
   .nav-links.open { opacity: 1; pointer-events: auto; transform: translateY(0); }
-  .nav-links li { border-bottom: 1px solid var(--cream-dark); padding: .6rem 0; }
+  .nav-links li { border-bottom: 1px solid var(--cream-dark); padding: 0; }
   .nav-links li:last-child { border-bottom: none; }
-  .nav-links a { display: block; padding: .2rem 0; font-size: 1rem; }
+  .nav-links a { display: flex; align-items: center; font-size: .9rem; padding: .6rem 0; }
   .nav-burger { display: flex; }
   .nav-cta-desktop { display: none; }
   section { padding: 5rem 5%; }
