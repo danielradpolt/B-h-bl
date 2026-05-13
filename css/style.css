@@ -330,6 +330,12 @@ h2 {
   letter-spacing: .08em; color: var(--green-dark); margin-bottom: .7rem;
   display: block;
 }
+.service-modal-body .modal-link {
+  display: inline-block; margin-top: .4rem; margin-bottom: 1rem;
+  color: var(--green-dark); font-weight: 600; font-size: .95rem;
+  text-decoration: underline; text-underline-offset: 3px;
+}
+.service-modal-body .modal-link:hover { color: var(--green-mid); }
 .service-modal-body ul {
   list-style: none; display: grid;
   grid-template-columns: 1fr 1fr; gap: .4rem .5rem;

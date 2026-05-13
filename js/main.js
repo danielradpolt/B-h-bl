@@ -79,7 +79,10 @@ const serviceData = {
         <li>Emotionale und soziale Probleme</li>
         <li>Wahrnehmungs- und Sprachstörungen</li>
         <li>Psychiatrische Erkrankungen</li>
-      </ul>`
+      </ul>
+      <span class="modal-label">Förderung</span>
+      <p>Für HTFP kann beim Land OÖ ein Kostenzuschuss beantragt werden:</p>
+      <a class="modal-link" href="https://e-gov.ooe.gv.at/fs_so/start.do?wfjs_enabled=true&vid=c06fa43caac04f5a&wfjs_orig_req=%2Fstart.do%3Fevent%3Dview%26generalid%3Dso017therapiezuschuesseE&txid=4a80ea2ddda7c27d63bb0d36eaa04a019b4ef330#" target="_blank" rel="noopener noreferrer">Antrag auf Kostenzuschuss (Land OÖ) →</a>`
   },
   psycho: {
     title: 'Tiergestützte Psychotherapie',
